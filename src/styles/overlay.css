@@ -1,0 +1,105 @@
+.overlay-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    /* Ensure the overlay stays within the bounds of the image */
+}
+
+.company-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Full Overlay */
+.overlay-full {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.overlay-container:hover .overlay-full {
+    opacity: 1;
+}
+
+/* Bottom to Top Overlay */
+.overlay-up {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    transition: height 0.5s ease-in-out;
+}
+
+.overlay-container:hover .overlay-up {
+    height: 100%;
+}
+
+/* Top to Bottom Overlay */
+.overlay-down {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    transition: height 0.5s ease-in-out;
+}
+
+.overlay-container:hover .overlay-down {
+    height: 100%;
+}
+
+/* Left to Right Overlay */
+.overlay-left {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    transition: width 0.5s ease-in-out;
+}
+
+.overlay-container:hover .overlay-left {
+    width: 100%;
+}
+
+/* Right to Left Overlay */
+.overlay-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    transition: width 0.5s ease-in-out;
+}
+
+.overlay-container:hover .overlay-right {
+    width: 100%;
+}
+
+.overlay-text {
+    /* text-align: center; */
+    font-size: 1.5rem;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+}
+
+.overlay-text-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-container:hover .overlay-text {
+    opacity: 1;
+}
