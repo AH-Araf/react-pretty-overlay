@@ -1,6 +1,6 @@
-# React Aesthetic Overlay
+# React Pretty Overlay
 
-A React component library for aesthetic overlay effects.
+A React component library for pretty overlay effects.
 
 
 ## Installation
